@@ -8,8 +8,92 @@
     <title>Numiko Jumplinks</title>
   </head>
   <body>
-    <section>
-      <h1 class="text-blue-500">Hello World</h1>
+    <section class="h-[600px] bg-teal-800 mt-8 pb-8 relative z-30">
+      <div class="container pt-12">
+        <h2 class="text-white">Section before jumplinks</h2>
+      </div>
+    </section>
+
+    <section class="relative">
+      <div class="sticky top-0">
+        <div class="relative">
+          <nav class="bg-black text-white p-4 relative z-30">
+            <div class="container flex items-center justify-between">
+              <h2>Section One</h2>
+              <button>Show</button>
+            </div>
+          </nav>
+
+          <nav
+            class="bg-black text-white w-full absolute z-20 top-[-200px] transition-transform duration-500"
+            aria-hidden="true"
+          >
+            <ul class="container py-8 flex flex-wrap gap-8 mx-auto">
+              <li><a href="#one">Section One</a></li>
+              <li><a href="#two">Section Two</a></li>
+              <li><a href="#three">Section Three</a></li>
+              <li><a href="#four">Section Four</a></li>
+              <li><a href="#five">Section Five</a></li>
+              <li><a href="#six">Section Six</a></li>
+              <li><a href="#seven">Section Seven</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <section id="one" class="h-[600px] bg-teal-800 mb-8">
+        <div class="container pt-12">
+          <h2 class="text-white">Section One</h2>
+        </div>
+      </section>
+
+      <section id="two" class="h-[600px] bg-teal-800 mb-8">
+        <div class="container pt-12">
+          <h2 class="text-white">Section Two</h2>
+        </div>
+      </section>
+
+      <section id="three" class="h-[600px] bg-teal-800 mb-8">
+        <div class="container pt-12">
+          <h2 class="text-white">Section Three</h2>
+        </div>
+      </section>
+
+      <section id="four" class="h-[600px] bg-teal-800 mb-8">
+        <div class="container pt-12">
+          <h2 class="text-white">Section Four</h2>
+        </div>
+      </section>
+
+      <section id="#five" class="h-[600px] bg-teal-800 mb-8">
+        <div class="container pt-12">
+          <h2 class="text-white">Section Five</h2>
+        </div>
+      </section>
+
+      <section id="six" class="h-[600px] bg-teal-800 mb-8">
+        <div class="container pt-12">
+          <h2 class="text-white">Section Six</h2>
+        </div>
+      </section>
+
+      <section id="seven" class="h-[600px] bg-teal-800 mb-8">
+        <div class="container pt-12">
+          <h2 class="text-white">Section Seven</h2>
+        </div>
+      </section>
+    </section>
+
+    <section class="h-[600px] bg-teal-800 mb-8 top-0">
+      <div class="container pt-12">
+        <h2 class="text-white">Section after jumplinks</h2>
+      </div>
+    </section>
+
+    <section class="h-[600px] bg-teal-800 mb-8">
+      <div class="container pt-12">
+        <h2 class="text-white">Next section after jumplinks</h2>
+      </div>
     </section>
     <script type="module" src="/main.js"></script>
   </body>
