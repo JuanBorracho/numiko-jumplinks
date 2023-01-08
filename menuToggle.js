@@ -12,7 +12,6 @@ menuToggle.addEventListener('click', () => {
     menuDropdown.setAttribute('aria-hidden', 'false');
     menuDropdown.classList.replace('hidden', 'block');
     let height = getComputedStyle(menuDropdown).getPropertyValue('height');
-    console.log(height);
     menuDropdown.style.height = '0';
     setTimeout(() => {
       menuDropdown.style.height = height;
@@ -36,3 +35,21 @@ menuToggle.addEventListener('click', () => {
 /*
  *  Close the dropdown menu if a user clicks outside of it
  */
+
+window.addEventListener('click', (e) => {
+  if (
+    e.target !== menuToggle &&
+    menuDropdown.getAttribute('aria-hidden') == 'false'
+  ) {
+    menuDropdown.style.height = '0';
+    menuDropdown.setAttribute('aria-hidden', 'true');
+    menuDropdown.addEventListener(
+      'transitionend',
+      () => {
+        menuDropdown.classList.replace('block', 'hidden');
+        menuDropdown.style.height = null;
+      },
+      { once: true }
+    );
+  }
+});
