@@ -1,4 +1,9 @@
-// * Updating the section title
+/*
+ *  This module uses the intersection observer API to
+ *  watch for when the jumplink sections are intersecting
+ *  and then update the section title on the jumplink nav.
+ */
+
 const sectionName = document.querySelector('[data-section-title]');
 const sections = document.querySelectorAll('[data-jumplink-item]');
 const jumplinksContainer = document.querySelector('[data-jumplink-container]');

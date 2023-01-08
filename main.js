@@ -1,1 +1,2 @@
-import './sectionTitle.js';
+import './sectionTitle';
+import './menuToggle';

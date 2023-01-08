@@ -8,7 +8,7 @@
     <title>Numiko Jumplinks</title>
   </head>
   <body>
-    <section class="h-[600px] bg-teal-800 mt-8 pb-8 relative z-30">
+    <section class="h-[600px] bg-teal-800 mt-8 pb-8 relative">
       <div class="container pt-12">
         <h2 class="text-white">Section before jumplinks</h2>
       </div>
@@ -17,15 +17,16 @@
     <section class="relative" data-jumplink-container>
       <div class="sticky top-0">
         <div class="relative">
-          <nav class="bg-black text-white p-4 relative z-30" data-jumplink-nav>
+          <nav class="bg-black text-white p-4" data-jumplink-nav>
             <div class="container flex items-center justify-between">
               <h2 data-section-title>Section One</h2>
-              <button>Show</button>
+              <button data-menu-toggle>Show</button>
             </div>
           </nav>
 
           <nav
-            class="bg-black text-white w-full absolute z-20 top-[-200px] transition-transform duration-500"
+            class="bg-black text-white w-full hidden overflow-hidden transition-height duration-700 ease"
+            data-menu-dropdown
             aria-hidden="true">
             <ul class="container py-8 flex flex-wrap gap-8 mx-auto">
               <li><a href="#one">Section One</a></li>
