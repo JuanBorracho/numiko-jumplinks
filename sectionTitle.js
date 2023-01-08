@@ -13,8 +13,8 @@ document.addEventListener('scroll', (e) => {
   if (nav.getBoundingClientRect().top === 0) {
     const options = {
       root: null,
-      threshold: 0,
-      rootMargin: '0px 0px -600px 0px',
+      threshold: 0.5,
+      rootMargin: '75px',
     };
 
     const observer = new IntersectionObserver(function (entries, observer) {
