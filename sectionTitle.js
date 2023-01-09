@@ -14,7 +14,7 @@ document.addEventListener('scroll', (e) => {
     const options = {
       root: null,
       threshold: 0.5,
-      rootMargin: '0px',
+      rootMargin: '-60px 0px -60px 0px',
     };
 
     const observer = new IntersectionObserver(function (entries, observer) {
